@@ -1,1 +1,62 @@
-// styles go here
+@import "utils/reset";
+@import "utils/normalize";
+@import "utils/variables";
+
+.App {
+  padding: 8px 32px;
+
+  &__contentWrapper {
+    margin-right: 340px;
+
+    @media (max-width: 785px) {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    padding: 8px;
+  }
+
+  &__button {
+    display: block;
+    width: 80%;
+    height: 30px;
+    border: 2px solid $c-lite-blue;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    color: $c-lite-blue;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    transition: background-color 0.2s, color 0.2s;
+
+    &:not(:last-child) {
+      margin-right: 14px;
+    }
+
+    &:hover {
+      background-color: $c-lite-blue;
+      color: #fff;
+    }
+
+    &:disabled {
+      cursor: wait;
+      filter: grayscale(70%);
+    }
+  }
+
+  &__filters {
+    margin-bottom: 16px;
+  }
+
+  &__loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
