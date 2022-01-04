@@ -1,5 +1,6 @@
 # One page pokemons list
-- Click on the link to see the Pokemons List in action. [DEMO LINK](https://serhiikirik.github.io/pokemon/)
+- Click on the link to see the Pokemons List in action.
+- [DEMO LINK](https://serhiikirik.github.io/pokemon/)
 
 ## Description
 - Technology that was used: React, React Hooks, React Select, TypeScript, HTML5, BEM, SCSS;
